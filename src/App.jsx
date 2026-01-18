@@ -29,13 +29,11 @@ const Home = () => {
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter basename="/3DPRINT">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,7 +1,7 @@
 // Mock data for 3DGURU Landing Page
 
 export const siteData = {
-  name: "3DGURU",
+  name: "3DPRINT",
   tagline: "Your Ultimate 3D Printing Companion App",
   
   promo: {
