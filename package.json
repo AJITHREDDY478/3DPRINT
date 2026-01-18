@@ -1,5 +1,6 @@
 {
   "name": "3dguru-frontend",
+  "homepage": "https://ajithreddy478.github.io/3DPRINT",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "vite": "^5.4.8",
+    "@vitejs/plugin-react": "^4.x",
     "@hookform/resolvers": "^5.0.1",
-
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.4",
@@ -39,7 +43,6 @@
     "@radix-ui/react-toggle": "^1.1.10",
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
-
     "axios": "^1.8.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -50,8 +53,8 @@
     "lucide-react": "^0.562.0",
     "next-themes": "^0.4.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-day-picker": "^8.10.1",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.56.2",
     "react-resizable-panels": "^3.0.1",
     "react-router-dom": "^6.22.3",
@@ -71,6 +74,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
